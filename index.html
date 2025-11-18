@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME SYNC // INTERFACE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-black': '#0F0F0F',    // Background
+                        'card-bg': '#1A1A1A',       // Card background
+                        'magenta': '#FF00FF',       // Vibrant Magenta (YouTube Accent)
+                        'cyan': '#00FFFF',          // Electric Cyan (WhatsApp Accent)
+                        'text-primary': '#FFFFFF',
+                        'text-secondary': '#A0A0A0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif'],
+                        mono: ['"Dank Mono"', 'ui-monospace'],
+                    }
+                },
+            }
+        }
+    </script>
+
+    <style>
+        .card-base {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border-bottom: 4px solid transparent;
+        }
+
+        /* Magenta Card Hover Effect */
+        .card-magenta:hover {
+            box-shadow: 0 0 25px rgba(255, 0, 255, 0.6);
+            border-color: #FF00FF;
+            transform: translateY(-4px);
+        }
+
+        /* Cyan Card Hover Effect */
+        .card-cyan:hover {
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+            border-color: #00FFFF;
+            transform: translateY(-4px);
+        }
+
+        .btn-base {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-deep-black text-text-primary min-h-screen flex flex-col items-center justify-center p-4 font-sans">
+
+    <div class="max-w-6xl w-full text-center space-y-12 py-16">
+
+        <header class="mb-10">
+            <h1 class="text-5xl sm:text-7xl font-extrabold uppercase tracking-widest text-cyan" 
+                style="text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);">
+                ANIME SYNC <span class="text-magenta">// INTERFACE</span>
+            </h1>
+            <p class="text-xl sm:text-2xl mt-4 text-text-secondary font-mono">
+                Digital Masters of Cinematic Anime Edits.
+            </p>
+        </header>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+
+            <div class="card-base card-magenta bg-card-bg p-8 rounded-xl space-y-6">
+                
+                <p class="text-sm font-bold tracking-widest uppercase text-magenta font-mono">
+                    TARGET: MAIN FRAME
+                </p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-text-primary">
+                    STREAM PROTOCOL [YOUTUBE]
+                </h2>
+                
+                <p class="text-text-secondary text-lg pt-2">
+                    Access our full-resolution library. The highest quality AMVs, cinematic sequences, and exclusive featurettes. Updates: <span class="text-magenta font-bold">WEEKLY.</span>
+                </p>
+                
+                <a href="https://www.youtube.com/@AnimeSync-v7x" target="_blank" 
+                   class="btn-base block text-center mt-8 py-4 px-8 rounded-lg uppercase font-bold text-xl 
+                          bg-magenta text-deep-black hover:bg-white hover:text-magenta shadow-lg shadow-magenta/50">
+                    EXECUTE STREAM (MAIN FEED)
+                </a>
+            </div>
+
+            <div class="card-base card-cyan bg-card-bg p-8 rounded-xl space-y-6">
+                
+                <p class="text-sm font-bold tracking-widest uppercase text-cyan font-mono">
+                    TARGET: DIRECT LINK
+                </p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-text-primary">
+                    COMMUNITY PORTAL [WHATSAPP]
+                </h2>
+                
+                <p class="text-text-secondary text-lg pt-2">
+                    Join the exclusive squad channel for instant notifications, behind-the-scenes clips, and early access previews. Access: <span class="text-cyan font-bold">INSTANT.</span>
+                </p>
+                
+                <a href="https://www.whatsapp.com/channel/0029VbAVQA1Dp2Q9WaBBwD0M" target="_blank" 
+                   class="btn-base block text-center mt-8 py-4 px-8 rounded-lg uppercase font-bold text-xl 
+                          bg-cyan text-deep-black hover:bg-white hover:text-cyan shadow-lg shadow-cyan/50">
+                    CONNECT TO PORTAL (DAILY ACCESS)
+                </a>
+            </div>
+
+        </div>
+        
+        <footer class="pt-12 text-sm text-text-secondary font-mono">
+            <p>// Interface Ready // All systems nominal</p>
+        </footer>
+    </div>
+
+</body>
+</html>
